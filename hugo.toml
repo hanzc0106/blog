@@ -1,4 +1,4 @@
-baseURL="https://hanzc0106.github.io/"
+baseURL="https://hanzc0106.github.io/blog/"
 # Change the default theme to be use when building the site with Hugo
 theme="LoveIt"
 # website title
@@ -19,6 +19,11 @@ enableGitInfo=false
 enableEmoji=true
 # ignore some build errors
 ignoreErrors=["error-missing-instagram-accesstoken", "error-remote-getjson"]
+
+[caches]
+  [caches.images]
+    dir=':cacheDir/images'
+
 # Pagination config
 [pagination]
   disableAliases=false
@@ -27,8 +32,19 @@ ignoreErrors=["error-missing-instagram-accesstoken", "error-remote-getjson"]
 # Menu config
 [menu]
   [[menu.main]]
-    identifier="posts"
+    identifier="home"
     weight    =1
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre=""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    name="Home"
+    post=""
+    url ="/"
+    # title will be shown when you hover on this menu link
+    title=""
+  [[menu.main]]
+    identifier="posts"
+    weight    =2
     # you can add extra information before the name (HTML format is supported), such as icons
     pre=""
     # you can add extra information after the name (HTML format is supported), such as icons
@@ -44,7 +60,7 @@ ignoreErrors=["error-missing-instagram-accesstoken", "error-remote-getjson"]
     pre       =""
     title     =""
     url       ="/tags/"
-    weight    =2
+    weight    =3
   [[menu.main]]
     identifier="categories"
     name      ="Categories"
@@ -52,7 +68,7 @@ ignoreErrors=["error-missing-instagram-accesstoken", "error-remote-getjson"]
     pre       =""
     title     =""
     url       ="/categories/"
-    weight    =3
+    weight    =4
 [params]
   # site default theme ["auto", "light", "dark"]
   defaultTheme="auto"
@@ -170,7 +186,7 @@ ignoreErrors=["error-missing-instagram-accesstoken", "error-remote-getjson"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail=""
       # URL of avatar shown in home page
-      avatarURL="/static/avatar.png"
+      avatarURL="/blog/images/avatar.png"
       #  title shown in home page (HTML format is supported)
       title=""
       # subtitle shown in home page (HTML format is supported)
@@ -341,13 +357,13 @@ ignoreErrors=["error-missing-instagram-accesstoken", "error-remote-getjson"]
       Baidu        =false
       Blogger      =false
       Buffer       =false
-      Diaspora     =true  # 
+      Diaspora     =false # 
       Evernote     =false
       Facebook     =true
       Flipboard    =false
       HackerNews   =true
       Instapaper   =false
-      Line         =true
+      Line         =false
       Linkedin     =false
       Mix          =false
       Odnoklassniki=false
@@ -355,17 +371,17 @@ ignoreErrors=["error-missing-instagram-accesstoken", "error-remote-getjson"]
       Pocket       =false
       Reddit       =false
       Skype        =false
-      Telegram     =true  # 
-      Threads      =true  # 
+      Telegram     =false # 
+      Threads      =false # 
       Trello       =false
       Tumblr       =false
       Twitter      =false # 
       VK           =false
       Weibo        =true
       Whatsapp     =false
-      X            =true  # 
+      X            =false # 
       Xing         =false
-      enable       =true
+      enable       =false
     #  Comment config
     [params.page.comment]
       enable=false

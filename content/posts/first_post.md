@@ -2,6 +2,8 @@
 date = '2025-03-27T16:48:48+08:00'
 draft = false
 title = 'First_post'
+tags = ['hugo']
+categories = ['hugo']
 +++
 
 # First_post
@@ -23,3 +25,5 @@ cd blog
 # 查看站点目录
 ls
 ```
+
+![avatar](/blog/images/avatar.png)
