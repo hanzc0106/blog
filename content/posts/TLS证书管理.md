@@ -2,11 +2,9 @@
 date = '2025-03-29T13:35:39+08:00'
 draft = false
 title = 'TLS证书管理'
-tags = [网站开发, 网站部署, TLS, TLS证书]
-categories = [网站开发, 网站部署, TLS, TLS证书]
+tags = ['网站开发', '网站部署', 'TLS', 'TLS证书']
+categories = ['网站开发', '网站部署', 'TLS', 'TLS证书']
 +++
-
-# TLS证书管理
 
 使用`Let's Encrypt`申请和部署免费的`TLS`证书，并实现自动续期。
 

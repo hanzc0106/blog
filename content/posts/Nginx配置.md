@@ -2,11 +2,9 @@
 date = '2025-03-29T14:06:49+08:00'
 draft = false
 title = 'Nginx配置'
-tags = [网站开发, 网站部署, Nginx, Nginx配置]
-categories = [网站开发, 网站部署, Nginx, Nginx配置]
+tags = ['网站开发', '网站部署', 'Nginx', 'Nginx配置']
+categories = ['网站开发', '网站部署', 'Nginx', 'Nginx配置']
 +++
-
-# Nginx配置
 
 ## 通过 IP 访问网站
 
